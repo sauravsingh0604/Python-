@@ -1,0 +1,41 @@
+#  WRT 7th Question, create 3 Laptop objects and add them to the list in the sorted order based on the ram size.
+
+class Laptop:
+    
+    def __init__(self,brand,cpu,ram,hdd):
+        self.brand=brand
+        self.cpu=cpu
+        self.ram=ram
+        self.hdd=hdd
+
+    
+    def compare(self,p,q):
+       list=[]
+       list.append(self.ram)
+       list.append(p)
+       list.append(q)
+
+       
+
+       sorted(list)
+
+       print(list)
+
+
+
+
+    def showconfig(self):
+        print("Brand",self.brand,"ram :",self.ram,"cpu",self.cpu,"HDD: ",self.hdd)
+
+
+user1=Laptop("Hp","i7",16,"1 TB")
+
+user2=Laptop("Hp","i5",4,"2 TB")
+
+user3=Laptop("Hp","i3",8,"3 TB")
+
+user1.showconfig()
+user2.showconfig()
+user3.showconfig()
+
+user1.compare(4,8)
